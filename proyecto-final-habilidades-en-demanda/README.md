@@ -61,6 +61,8 @@ El proyecto cubre el ciclo completo del análisis de datos:
 
 ## Estructura del Proyecto
 
+
+```
 proyecto-final-habilidades-en-demanda/
 ├── 01_data_collection/        # Obtención de datos (APIs y Web Scraping)
 ├── 02_data_cleaning/          # Limpieza y preparación de datos
@@ -68,8 +70,7 @@ proyecto-final-habilidades-en-demanda/
 ├── 04_visualization/          # Gráficos y visualizaciones
 ├── 05_dashboard/              # Dashboard en IBM Cognos Analytics
 └── 06_presentation/           # Presentación final de resultados
-
-
+```
 
 ---
 
