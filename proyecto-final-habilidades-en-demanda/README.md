@@ -64,12 +64,12 @@ El proyecto cubre el ciclo completo del análisis de datos:
 
 ```
 proyecto-final-habilidades-en-demanda/
-├── 01_data_collection/        # Obtención de datos (APIs y Web Scraping)
-├── 02_data_cleaning/          # Limpieza y preparación de datos
-├── 03_exploratory_analysis/   # Análisis exploratorio de datos (EDA)
-├── 04_visualization/          # Gráficos y visualizaciones
-├── 05_dashboard/              # Dashboard en IBM Cognos Analytics
-└── 06_presentation/           # Presentación final de resultados
+├── 01_Preguntar/               # Definición del probema, objetivos, alcance
+├── 02_Preparar/                # Recopilación de datos
+├── 03_Procesar/                # Limpieza y de datos
+├── 04_Analizar/                # Análisis exploratorio de datos (EDA)
+├── 05_Compartir/               # Gráficos y visualizaciones
+└── 06_Actuar/                  # Presentación final de resultados
 ```
 
 ---
