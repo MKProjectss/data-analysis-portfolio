@@ -1,4 +1,4 @@
-# Fase 2: Preparar
+# Proyecto: Análisis de Tecnologías en TI – Fase 2: Preparar
 
 Este análisis se basa en datos externos, específicamente en un subconjunto de la **Encuesta de Desarrolladores de Stack Overflow 2024**.  
 
