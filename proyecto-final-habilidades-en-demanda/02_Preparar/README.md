@@ -9,6 +9,12 @@ https://stackoverflow.blog/2024/08/06/2024-developer-survey/
 
 ---
 
+## Objetivo de fase  
+
+Evaluar la estructura, calidad y relevancia del conjunto de datos con el fin de identificar posibles problemas que afecten el análisis posterior y definir la estrategia de transformación necesaria en la fase de procesamiento.
+
+---
+
 ## Descripción del conjunto de datos
 
 El subconjunto utilizado cuenta con:
@@ -18,9 +24,8 @@ El subconjunto utilizado cuenta con:
 
 Los tipos de datos identificados incluyen:
 
-- Variables de tipo `object`
-- Variables de tipo `float`
-- Variables de tipo `int`
+- Numéricos, ejemplo: CompTotal.
+- Categóricos, ejemplos: Age, EdLevel.
 
 ---
 
@@ -28,12 +33,18 @@ Los tipos de datos identificados incluyen:
 
 Durante la exploración general del dataset se detectaron las siguientes condiciones relevantes:
 
-- Presencia de valores nulos en múltiples atributos.
-- Variables numéricas almacenadas como texto.
+- Variables numéricas almacenadas como tipo object.  
 - Columnas que permiten múltiples respuestas separadas por el carácter `;`.
-- Atributos con un alto porcentaje de datos faltantes.
+- Presencia de valores nulos en múltiples atributos.
+- Atributos con un alto porcentaje de datos faltantes, por ejemplo, PlatformAdmired con 34,069 nulos (52%).
+- Se detectaron 20 registros duplicados.  
 
-Estas condiciones impactan directamente la estrategia de transformación y limpieza de datos, las cuales serán abordadas en la fase 3: **Procesar**.
+Estas condiciones impactan directamente la estrategia de transformación y limpieza de datos, como se lista a continuación:  
+ 
+- Conversión de tipos object a numéricos cuando corresponda.
+- Transformación de columnas multivalor mediante separación y expansión.
+- Tratamiento de valores nulos según análisis por atributo.  
+- Eliminación de duplicados. 
 
 ---
 
@@ -79,6 +90,14 @@ Este atributo permite identificar tecnologías respaldadas dentro de las empresa
 
 ---
 
+## Identificador (Llave primaria lógica)  
+
+- ResponseId
+
+Es el identificador único de cada registro, permite identificar duplicados.
+
+---
+
 ## Atributos excluidos
 
 Se excluyen atributos que no contribuyen directamente al cumplimiento de los objetivos del proyecto, como:
@@ -96,7 +115,7 @@ Asimismo, se excluyen atributos cuya composición presenta más del 50% de valor
 
 ## Consideraciones sobre la calidad de los datos
 
-Durante la exploración inicial se identificó la presencia de valores nulos y atributos con tipos de datos incorrectamente definidos.  
+Durante la exploración inicial se identificó la presencia de valores nulos y atributos con tipos de datos incorrectamente definidos. Sin embargo, dado que se trata de una encuesta voluntaria, estos valores corresponden a preguntas no respondidas y no necesariamente a errores en los datos. El análisis se realizará considerando únicamente los registros con respuesta válida para cada atributo.    
 
 En esta fase no se realizan transformaciones ni limpieza de datos. Las decisiones relacionadas con imputación, eliminación o transformación de variables serán abordadas en la fase de **Procesar**.
 
