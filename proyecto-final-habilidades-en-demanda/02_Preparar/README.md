@@ -7,9 +7,33 @@ El subconjunto fue proporcionado como parte del material educativo de la certifi
 Fuente oficial de la encuesta:
 https://stackoverflow.blog/2024/08/06/2024-developer-survey/
 
-El subconjunto utilizado cuenta con **65,457 registros** y **114 atributos**. Entre los tipos de datos identificados se encuentran variables de tipo objeto, flotante y entero.  
+---
 
-Se detectó que no todos los atributos tienen correctamente definido su tipo de dato (por ejemplo, variables numéricas almacenadas como texto). Además, algunos atributos permiten múltiples respuestas separadas por el carácter `;`, lo cual influye en la forma en que serán transformados y procesados en la siguiente fase.
+## Descripción del conjunto de datos
+
+El subconjunto utilizado cuenta con:
+
+- **65,457 registros**
+- **114 atributos**
+
+Los tipos de datos identificados incluyen:
+
+- Variables de tipo `object`
+- Variables de tipo `float`
+- Variables de tipo `int`
+
+---
+
+## Características identificadas durante la exploración inicial
+
+Durante la exploración general del dataset se detectaron las siguientes condiciones relevantes:
+
+- Presencia de valores nulos en múltiples atributos.
+- Variables numéricas almacenadas como texto.
+- Columnas que permiten múltiples respuestas separadas por el carácter `;`.
+- Atributos con un alto porcentaje de datos faltantes.
+
+Estas condiciones impactan directamente la estrategia de transformación y limpieza de datos, las cuales serán abordadas en la fase 3: **Procesar**.
 
 ---
 
