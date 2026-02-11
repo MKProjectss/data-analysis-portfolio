@@ -1,6 +1,11 @@
 # Proyecto: Análisis de Tecnologías en TI – Fase 2: Preparar
 
-Este análisis se basa en datos externos, específicamente en un subconjunto de la **Encuesta de Desarrolladores de Stack Overflow 2024**.  
+Este análisis se basa en datos externos, específicamente en un subconjunto de la **Encuesta de Desarrolladores de Stack Overflow 2024**.   
+
+El subconjunto fue proporcionado como parte del material educativo de la certificación de IBM en Coursera. Los datos originales pertenecen a Stack Overflow y se distribuyen bajo licencia abierta (ODbL).
+
+Fuente oficial de la encuesta:
+https://stackoverflow.blog/2024/08/06/2024-developer-survey/
 
 El subconjunto utilizado cuenta con **65,457 registros** y **114 atributos**. Entre los tipos de datos identificados se encuentran variables de tipo objeto, flotante y entero.  
 
