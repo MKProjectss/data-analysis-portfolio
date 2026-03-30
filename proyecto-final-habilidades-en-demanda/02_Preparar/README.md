@@ -1,11 +1,13 @@
-# Proyecto: Análisis de Tecnologías en TI – Fase 2: Preparar
+# Análisis de Tecnologías en TI | Fase 2: Preparación de Datos
 
 Este análisis se basa en datos externos, específicamente en un subconjunto de la **Encuesta de Desarrolladores de Stack Overflow 2024**.   
 
 El subconjunto fue proporcionado como parte del material educativo de la certificación de IBM en Coursera. Los datos originales pertenecen a Stack Overflow y se distribuyen bajo licencia abierta (ODbL).
 
 Fuente oficial de la encuesta:
-https://stackoverflow.blog/2024/08/06/2024-developer-survey/
+https://stackoverflow.blog/2024/08/06/2024-developer-survey/  
+
+El análisis de la calidad y estructura de los datos es fundamental para garantizar que los insights obtenidos en fases posteriores sean confiables y útiles para la toma de decisiones en el contexto del mercado tecnológico.
 
 ---
 
@@ -24,8 +26,21 @@ El subconjunto utilizado cuenta con:
 
 Los tipos de datos identificados incluyen:
 
-- Numéricos, ejemplo: CompTotal.
-- Categóricos, ejemplos: Age, EdLevel.
+- Numéricos (ej. CompTotal)
+- Categóricos (ej. Age, EdLevel)
+
+---
+
+## Resumen de Calidad de Datos
+
+| Aspecto              | Observación |
+|---------------------|------------|
+| Registros           | 65,457     |
+| Variables           | 114        |
+| Valores nulos       | Presentes en múltiples columnas |
+| Duplicados          | 20 registros |
+| Variables multivalor| Sí (`;` como separador) |
+| Tipos incorrectos   | Sí (object → numérico) |
 
 ---
 
@@ -78,15 +93,6 @@ También se incluyen atributos que no son el foco principal del análisis, pero 
 - EdLevel  
 - YearsCode  
 - YearsCodePro  
-- CompTotal  
-
----
-
-## Atributo adicional estratégico
-
-- TechEndorse  
-
-Este atributo permite identificar tecnologías respaldadas dentro de las empresas donde laboran los profesionales de TI, aportando una perspectiva organizacional complementaria.
 
 ---
 
@@ -118,4 +124,17 @@ Asimismo, se excluyen atributos cuya composición presenta más del 50% de valor
 Durante la exploración inicial se identificó la presencia de valores nulos y atributos con tipos de datos incorrectamente definidos. Sin embargo, dado que se trata de una encuesta voluntaria, estos valores corresponden a preguntas no respondidas y no necesariamente a errores en los datos. El análisis se realizará considerando únicamente los registros con respuesta válida para cada atributo.    
 
 En esta fase no se realizan transformaciones ni limpieza de datos. Las decisiones relacionadas con imputación, eliminación o transformación de variables serán abordadas en la fase de **Procesar**.
+
+---
+
+## Resultado de la Fase
+
+Como resultado de esta etapa, se definió una estrategia clara de procesamiento que incluye:
+
+- Eliminación de registros duplicados 
+- Estandarización de tipos de datos  
+- Normalización de variables multivalor  
+- Criterios para el tratamiento de valores nulos   
+
+Estos lineamientos servirán como base para la fase de procesamiento, donde se implementarán las transformaciones necesarias.
 
