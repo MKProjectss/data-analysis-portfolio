@@ -1,0 +1,13 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+
+# Datos pesados
+*.csv
+
+# Sistema
+.DS_Store
+Thumbs.db
