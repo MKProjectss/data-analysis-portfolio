@@ -40,3 +40,79 @@ El dashboard permite explorar:
 
 ---
 
+## Preparación de datos
+
+Principales transformaciones realizadas:
+- Eliminación de valores nulos e irrelevantes
+- Tranformación de columnas multi-respuesta mediante *explode*
+- Estandarización de categorías
+
+---
+
+## Métricas clave
+
+- Usage Rate → Nivel de adopción actual
+- Interest Rate → Demanda futura
+- Admired Rate → Retención / satisfacción
+- Growth Opportunity (Interest - Usage) → Potencial de crecimiento
+
+---
+
+## Estructura del dashboard
+
+### 1. Demografía
+- Distribución de encuestados por país, edad y nivel educativo
+
+### 2. Tecnologías 
+- Tecnologías mas utilizadas
+- Comparación entre uso actual e interés futuro
+- Tecnologías mas valoradas (admired)
+- Análisis de oportunidades de crecimiento
+
+### 3. Análisis por cuadrantes
+
+#### Mapa de mercado
+Clasificación de tecnologías en:
+- Crecimiento
+- Maduras
+- Emergentes
+- En declive
+
+#### Posicionamiento
+Segmentación en:
+- Líderes
+- Nicho valorado
+- Tendencia
+- Débil
+
+---
+
+## Principales Hallazgos
+
+
+
+
+---
+
+## Limitaciones
+
+- Los datos corresponden a un subconjunto de la encuesta, no a toda la población de desarrolladores
+- No representa necesariamente el estado actual del mercado en tiempo real
+- La estructura multi-respuesta puede introducir sesgos en los conteos
+
+---
+
+## Cómo usar el dashboard
+1. Navega entre las páginas: *Demografía*, *Tecnologías*, *Quadrants*
+2. Utiliza el filtro de categoría para cambiar entre:
+  - Database
+  - Dev. Tools
+  - Language
+  - Platform
+  - All
+4. Interactúa con los gráficos para explorar detalles
+
+---
+
+## Vista previa del dashboard
+
