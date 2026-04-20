@@ -6,8 +6,9 @@ El objetivo de esta etapa es transformar el conjunto de datos original en un dat
 
 ## Limpieza inicial  
 
-- Se eliminaron 20 registros duplicados utilizando **drop_duplicates()** para evitar sesgos en los conteos y análisis posteriores.
--	Se normalizaron cadenas de texto eliminando espacios en blanco al inicio y final para evitar categorías inconsistentes.
+- Se eliminaron 20 registros duplicados utilizando **drop_duplicates()** para evitar sesgos en los conteos y análisis posteriores
+-	Se normalizaron cadenas de texto eliminando espacios en blanco al inicio y final para evitar categorías inconsistentes
+-	Eliminación de registros sin información en tecnologías a analizar
 
 ---
 
@@ -24,7 +25,7 @@ El objetivo de esta etapa es transformar el conjunto de datos original en un dat
 
 ### País (Country)
 
-- Se normalizaron los nombres de países utilizando la librería **pycountry**, basada en el estándar **ISO 3166-1 alpha-3**
+- Se normalizaron los nombres de los países utilizando la librería **pycountry**, basada en el estándar **ISO 3166-1 alpha-3**
 - Registros no definidos en la librería fueron corregidos manualmente
 -	Presenta aproximadamente 10% de valores faltantes, se conservan los registros como nulos para mantener la integridad del estándar ISO-3166-1
 
@@ -43,7 +44,7 @@ El objetivo de esta etapa es transformar el conjunto de datos original en un dat
 
 ### Age
 
-- Variable categórica ordinal.
+- Variable categórica ordinal
 - Se estandarizó las etiquetas eliminando el sufijo “years old” para mejorar la legibilidad sin modificar el sentido semántico, ejemplos:
   - **'18-24 years old'** → **'18-24'**
   - **'25-34 years old'** → **'25-34'**
@@ -52,11 +53,40 @@ El objetivo de esta etapa es transformar el conjunto de datos original en un dat
 
 ## Variables con multirespuesta
 
-- Las **columnas multivalor** (separadas por delimitador) se transforman a un **modelo relacional**:
-  - Se implementó una función genérica basada en **explode()** para normalizar respuestas múltiples
-  - Cada dominio tecnológico se almacena en tablas independientes en formato parquet
-  - La tabla base de encuestados permanece sin alterar
-- Este enfoque evita combinaciones artificiales y permite análisis consistentes entre tecnologías y características demográficas
+- Las **columnas multivalor** (separadas por delimitador ;) se transforman a un **modelo relacional** (formato long):
+  - Se implementó una función reutilizable basada en **explode()** para normalizar respuestas múltiples por encuestado
+  - Cada registro representa una relación única entre **ResponseId** y una entidad tecnológica
+  - Se incorporó una variable **Relation** para diferenciar entre:
+    - **HaveWorkedWith** (uso actual)
+    - **WantToWorkWith** (interés)
+    - **Admired** (satisfacción)
+  - Se generaron tablas independientes por dominio:
+    - Lenguajes
+    - Bases de datos
+    - Plataformas
+    - Herramientas colaborativas
+- Los datasets resultantes se almacenan en formato **Parquet**
+- La tabla base de encuestados se mantiene sin modificaciones, permitiendo su uso para segmentaciones demográficas
+
+---
+
+## Enriquecimiento analítico  
+
+A partir del modelo relacional, se construyeron métricas clave para evaluar el posicionamiento de cada tecnología:
+
+- **Adopción**: Usage Rate
+- **Interés futuro**: Interest Rate
+- **Satisfacción**: Admired Rate
+- **Deseabilidad relativa**: Interest Ratio
+- **Potencial de crecimiento**: Growth Potential
+- **Interés neto**: Net Interest
+- **Conversión potencial**: Conversion Potential  
+
+Estas métricas permiten analizar:
+
+- Brechas entre uso actual e interés
+- Tecnologías emergentes vs consolidadas
+- Oportunidades de adopción en el mercado
 
 ---
 
