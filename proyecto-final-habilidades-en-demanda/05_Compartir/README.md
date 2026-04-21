@@ -116,3 +116,4 @@ Segmentación en:
 
 ## Vista previa del dashboard
 
+![Vista previa del dashboard](imagenes/dashboard_page_2.png)
