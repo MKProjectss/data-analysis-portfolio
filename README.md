@@ -19,24 +19,24 @@ Mostrar de forma clara y estructurada la aplicación práctica de herramientas d
 
 ## Proyectos incluidos
 
-### Proyecto final – Análisis de habilidades tecnológicas en demanda
+### Análisis de habilidades tecnológicas en demanda
 
 **Descripción:**  
 Análisis exploratorio de datos enfocado en identificar **tendencias del mercado tecnológico**, utilizando información proveniente de encuestas de desarrolladores y fuentes públicas.
 
 **Actividades realizadas:**
-- Integración de datos desde múltiples fuentes  
+- Integración de datos
 - Limpieza y preparación de la información  
 - Análisis exploratorio de datos  
 - Identificación de tendencias y conclusiones orientadas a negocio  
 - Visualización de resultados en dashboards  
 
 **Herramientas:**  
-Python (Pandas, Matplotlib), SQL, Excel, IBM Cognos Analytics
+Python (Pandas, Matplotlib), SQL, Power BI.
 
 ---
 
-### Proyecto personal – Análisis de ventas (tienda ficticia)
+### Análisis de ventas (tienda ficticia)
 
 **Descripción:**  
 Proyecto enfocado en el análisis de ventas para una tienda simulada, con el objetivo de medir desempeño y comportamiento comercial.
@@ -58,7 +58,6 @@ Excel, Power BI
 - **SQL:** consultas, agregaciones, análisis de información  
 - **Python:** análisis exploratorio de datos (Pandas, Matplotlib)  
 - **Power BI:** dashboards interactivos  
-- **IBM Cognos Analytics:** visualización y análisis  
 
 ---
 
