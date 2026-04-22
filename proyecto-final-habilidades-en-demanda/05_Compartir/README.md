@@ -89,8 +89,17 @@ Segmentación en:
 
 ## Principales Hallazgos
 
+- **Visual Studio Code** se posiciona como la herramienta dominante, liderando en uso, interés y admiración, consolidándose como el estándar del ecosistema de desarrollo.
 
+- **Estados Unidos** concentra la mayor proporción de encuestados (≈10.9K de 60K), lo que puede influir en las tendencias observadas hacia tecnologías predominantes en ese mercado.
 
+- La población encuestada es mayoritariamente joven: **más del 75% tiene menos de 35 años**, lo que sugiere que los resultados reflejan tendencias emergentes más que tecnologías legacy.
+
+- **JavaScript, PostgreSQL, AWS y Visual Studio Code** se clasifican como tecnologías maduras: alta adopción pero bajo crecimiento relativo, indicando estabilidad en su uso.
+
+- Tecnologías como **Rust, Datomic, Fly.io y Neovim** presentan **alto interés y admiración pese a baja adopción**, posicionándose como candidatas a crecimiento futuro.
+
+- Por el contrario, **MATLAB, Microsoft Access, Heroku y Code::Blocks** muestran bajos niveles de interés y admiración, lo que sugiere que su uso está más asociado al mantenimiento de sistemas existentes que a nuevas implementaciones.
 
 ---
 
