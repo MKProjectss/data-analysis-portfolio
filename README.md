@@ -22,30 +22,32 @@ Mostrar de forma clara y estructurada la aplicación práctica de herramientas d
 ### Análisis de habilidades tecnológicas en demanda
 
 **Descripción:**  
-Análisis exploratorio de datos enfocado en identificar **tendencias del mercado tecnológico**, utilizando información proveniente de encuestas de desarrolladores y fuentes públicas.
+Proyecto de análisis de datos enfocado en identificar tendencias del mercado tecnológico a partir de encuestas de desarrolladores y fuentes públicas, con el objetivo de generar insights estratégicos para la toma de decisiones en adopción tecnológica, capacitación y reclutamiento.
 
 **Actividades realizadas:**
 - Integración de datos
-- Limpieza y preparación de la información  
-- Análisis exploratorio de datos  
-- Identificación de tendencias y conclusiones orientadas a negocio  
-- Visualización de resultados en dashboards  
+- Limpieza, transformación y estructuración de información multivalor
+- Análisis exploratorio orientado a identificar patrones de uso, interés y adopción tecnológica
+- Definición de métricas clave (tasa de uso, interés y admiración)
+- Identificación de tendencias emergentes y tecnologías en declive
+- Desarrollo de dashboards para visualización y comunicación de resultados
 
 **Herramientas:**  
-Python (Pandas, Matplotlib), SQL, Power BI.
+Python (Pandas, Matplotlib), Power BI.
 
 ---
 
 ### Análisis de ventas (tienda ficticia)
 
 **Descripción:**  
-Proyecto enfocado en el análisis de ventas para una tienda simulada, con el objetivo de medir desempeño y comportamiento comercial.
+Proyecto enfocado en el análisis del desempeño comercial de una tienda ficticia, con el objetivo de identificar oportunidades de mejora en ventas, rentabilidad y comportamiento de clientes mediante el uso de KPIs y visualización de datos.
 
 **Actividades realizadas:**
 - Definición de indicadores clave (KPIs)  
-- Limpieza y organización de datos  
-- Análisis de resultados  
-- Creación de dashboard interactivo  
+- Limpieza, transformación y modelado de datos
+- Análisis exploratorio para identificación de patrones y tendencias
+- Evaluación de desempeño por producto, categoría y periodo
+- Desarrollo de dashboard interactivo para monitoreo de KPIs
 
 **Herramientas:**  
 Excel, Power BI
