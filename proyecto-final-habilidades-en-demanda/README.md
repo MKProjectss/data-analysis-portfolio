@@ -1,19 +1,21 @@
 # Proyecto Final – Análisis de Habilidades en Demanda
 
-Este proyecto forma parte de la **Certificación en Análisis de Datos de IBM** y simula un escenario real de consultoría, donde se analizan datos de múltiples fuentes para identificar **tendencias en habilidades tecnológicas demandadas** en el mercado laboral.
+## Contexto del negocio
 
-El análisis se basa principalmente en datos de la **Encuesta de Desarrolladores de Stack Overflow**, así como en información obtenida mediante APIs y Web Scraping.
+En un mercado tecnológico altamente competitivo y en constante evolución, identificar las habilidades más demandadas es fundamental para la toma de decisiones en reclutamiento, capacitación y planificación estratégica.  
+
+Empresas, profesionales y áreas de talento necesitan entender no solo qué tecnologías se utilizan actualmente, sino también cuáles están ganando interés y cuáles podrían volverse obsoletas.
 
 ---
 
 ## Objetivo del Proyecto
 
-Identificar y comunicar tendencias clave relacionadas con:
+Analizar datos para identificar tendencias clave en habilidades tecnológicas, evaluando:
+- Nivel de adopción (uso actual)
+- Interés futuro de los profesionales
+- Nivel de satisfacción o admiración hacia cada tecnología  
 
-- Lenguajes de programación más demandados  
-- Tecnologías de bases de datos más utilizadas  
-- Herramientas y entornos de desarrollo populares  
-- Oportunidades y tendencias del mercado laboral tecnológico  
+Con el fin de generar **insights accionables** que apoyen la toma de decisiones en contextos empresariales.
 
 ---
 
@@ -22,19 +24,20 @@ Identificar y comunicar tendencias clave relacionadas con:
 El proyecto cubre el ciclo completo del análisis de datos:
 
 ### Recolección de datos
-- Acceso y consumo de APIs
-- Web Scraping de fuentes públicas
-- Uso de datasets en formatos CSV y Excel
+- Uso de datasets en formatos CSV
 
 ### Preparación y limpieza de datos
 - Identificación y eliminación de duplicados
-- Detección e imputación de valores perdidos
-- Normalización y organización de datos
+- Tratamiento de valores nulos
+- Normalización de variables
+- Transformación de datos multivalor a modelo relacional 
 
 ### Análisis exploratorio de datos (EDA)
 - Análisis de distribuciones
-- Detección de valores atípicos (outliers)
 - Análisis de correlaciones entre variables
+- Construcción de métricas clave como
+  - *Interest Ratio*
+  - *Admired Ratio*
 
 ### Visualización de datos
 - Histogramas
@@ -43,7 +46,7 @@ El proyecto cubre el ciclo completo del análisis de datos:
 - Gráficos de barras, líneas, circulares y apilados
 
 ### Dashboard y comunicación
-- Creación de un cuadro de mando en **IBM Cognos Analytics**
+- Creación de un cuadro de mando en **Power BI**
 - Elaboración de una presentación ejecutiva con hallazgos clave
 
 ---
@@ -76,7 +79,11 @@ proyecto-final-habilidades-en-demanda/
 
 ## Resultados
 
-El proyecto permite obtener **insights accionables** sobre la evolución de habilidades tecnológicas, apoyando la toma de decisiones en contextos empresariales y de consultoría.
+Este proyecto permite identificar patrones y tendencias en habilidades tecnológicas, proporcionando una base sólida para la toma de decisiones en:
+
+- Reclutamiento y selección de talento  
+- Planeación de capacitación tecnológica  
+- Estrategias de adopción tecnológica en empresas
 
 ---
 
