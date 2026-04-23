@@ -125,4 +125,4 @@ Segmentación en:
 
 ## Vista previa del dashboard
 
-![Vista previa del dashboard](imagenes/dashboard_page_2.png)
+![Vista previa del dashboard](images/dashboard_page_2.png)
